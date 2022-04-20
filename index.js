@@ -8,6 +8,7 @@ const routes = require('./ROUTES')  //importar routes
 
 const app = express();  //usar o express no nosso servidor
 
+app.use(express.json()); //usar o json
 app.use(cors());    //usar o cors no nosso servidor para todas as rotas
 app.use(routes);    //usar as rotas criadas no nosso servidor
 
